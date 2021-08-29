@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Starter page</title>
+    <link rel="stylesheet" href="css/my_test_style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Starter Page - Intro to Web Dev Notes</h1>
+
+
+        <nav>
+            <a href="#top" target="_self">Link One</a>
+            <a href="">Link Two</a>
+            <a href="">Link three</a>
+            <a href="https://www.duckduckgo.com" target="_blank">search duck duck go</a>
+        </nav>
+    </header>
+    <section class="half">
+        <h2>Favorite Food</h2>
+        <ul>
+            <li>Palov</li>
+            <li>Somsa</li>
+            <li>Napeleon cake</li>
+            <li>dumplings</li>
+        </ul>
+    </section>
+    <section class="half">
+        <h2>About Me</h2>
+        I am a data analyst with 4 years of professional experience in a technology company. I have Bachelor's degree in
+        Economics with
+        Finance. But...
+        <br>
+        I was always passionate about computers and how software worked using logical statements. For this reason I
+        pursued my
+        passion and studied Data Science in Cal State East Bay and received my MS in Business Analytics.
+        <br>
+        Now I am working in a great technology company in Silicon Valley and continuing my learning by taking online
+        courses related to Web Development, Algorithms and DS, and Machine Learning.
+        <br>
+        I know these fields are vast and one can get lost in the ocean of terminology and ideas. Therefore, I am taking
+        a proactive approach and applying my knowledge in practice.
+    </section>
+    <section class="whole">
+        <h2>Achievements</h2>
+        <b>Started: Aug 28, 2021</b>
+        <hr>
+        <br>
+        Progress in this html course (100%): <progress max=100 value=100>100%</progress>
+        <details>
+            <summary><b>html course notes</b></summary>
+            <ul>
+                <li>Always make sure your html follows DOM structure standards. e.g. html>head>body</li>
+                <li>your web site should be accessible for disabled: no flashing photos, no colorful content, follows
+                    standards of W3C, images have alternative text</li>
+                <li>use <a href="https://validator.w3.org/nu/#textarea">w3 validator</a> to validate your html code</li>
+                <li>use <a href="https://wave.webaim.org/">Wave tool</a> to understand if your page meets accessibility
+                    requirements</li>
+                <li>refer to <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">mozilla MDN docs</a> to read on
+                    different html tags and attributes</li>
+                <li>Responsive design means the website can change its view to be mobile friendly. CSS allows those
+                    features</li>
+
+                <li>when you type a web address, DNS looks up the IPv6 address (location) of your website and then web
+                    server returns files and your browser shows them as a web page</li>
+                <li>host your free website here : <a href="https://byet.host/"></a>byet host</li>
+
+            </ul>
+
+        </details>
+
+        <br>
+        Progress: CSS3 course (100%): <progress max=100 value=100>0%</progress>
+        <details>
+            <summary> <b>CSS3 course notes</b></summary>
+            <ul>
+                <li>design first. Code second. Design in paper</li>
+                <li> don't spend more than 20 minutes figuring out the problem. Ask others or search in google</li>
+                <li>CSS is a set of rules for styling html elements. General syntax: selector {property:value;}</li>
+                <li>always use semi-colons and closing brackets</li>
+                <li>style tag is defined in head tag of html after title</li>
+                <li>instead of inline/internal css, we should use external css to make changes easier.
+                    < link rel="stylesheet" href="style.css">
+                </li>
+                <li>order of cascading rules: default, external, internal and inline. Browser will override your css if
+                    inline exists.</li>
+                <li>rule of precedence for styling: always last line or last imported css will have high priority</li>
+                <li>you can use !important next to value of css to make it priority no matter if other styling for the
+                    same element exists or not</li>
+                <li>always separate your styling from html</li>
+                <li>css example that changes the same html into different designs: <a href="http://csszengarden.com/">
+                        css zen garden</a></li>
+                <li>color name conventions: hex, rbg </li>
+                <li>test your site with contrast checker with the Wave tool</li>
+                <li>font-variant: you can select all uppercase with this property</li>
+                <li>font-size: use percentages to scale font to the display</li>
+                <li>selectors can select multiple elements with a comma</li>
+                <li>align-text to left, center, right, bottom</li>
+                <li>display elements: inline (next to other element), block (takes all horizontal width)</li>
+                <li>inline-block: same as inline but accepts height and width; none - remove from page</li>
+                <li>example:
+                    <br>
+                    <span>span A</span>
+                    <span>B</span>
+                    <span>C</span>
+                </li>
+                <li id='after-span'>float repositions elements to right or left within its own section. Elements will
+                    not overlap</li>
+                <li>clear: keep floating elements away for the current element</li>
+                <li>use overflow to fit the content</li>
+                <li>overflow: show, hidden, scroll, auto</li>
+                <li>we can also use table-cell to correctly format elements</li>
+                <li>examples:
+                    <br>
+                    <details>
+                        <summary>Lorem ipsum text</summary>
+
+                        <p class="overfl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi cum
+                            commodi
+                            reiciendis
+                            at. Voluptas in explicabo est aliquid sequi. Alias eligendi fugit tempora, delectus quod nam
+                            quisquam nihil facere?
+                            Eos numquam neque sequi natus, aliquid tempore unde nemo porro quas, laudantium soluta
+                            suscipit
+                            labore nam quasi corrupti veritatis nihil vitae obcaecati! Illum vitae maiores, magni
+                            incidunt
+                            nobis ex quo.
+                            Officia aut delectus vel ipsa temporibus laboriosam eum. Ex accusamus ad delectus autem? Sit
+                            doloremque nam consectetur, dolorem dolor est, recusandae dignissimos quia aliquam totam
+                            consequuntur harum id consequatur sapiente.
+                            Omnis, veritatis sequi? Reiciendis odit debitis officiis eligendi, cum eaque eius autem
+                            molestiae dolorum sunt rem saepe. Architecto cumque, fugiat totam repellat quas deserunt
+                            nihil
+                            excepturi vero, saepe eius officia!</p>
+                        <p class="overfl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi cum
+                            commodi
+                            reiciendis
+                            at. Voluptas in explicabo est aliquid sequi. Alias eligendi fugit tempora, delectus quod nam
+                            quisquam nihil facere?
+                            Eos numquam neque sequi natus, aliquid tempore unde nemo porro quas, laudantium soluta
+                            suscipit
+                            labore nam quasi corrupti veritatis nihil vitae obcaecati! Illum vitae maiores, magni
+                            incidunt
+                            nobis ex quo.
+                            Officia aut delectus vel ipsa temporibus laboriosam eum. Ex accusamus ad delectus autem? Sit
+                            doloremque nam consectetur, dolorem dolor est, recusandae dignissimos quia aliquam totam
+                            consequuntur harum id consequatur sapiente.
+                            Omnis, veritatis sequi? Reiciendis odit debitis officiis eligendi, cum eaque eius autem
+                            molestiae dolorum sunt rem saepe. Architecto cumque, fugiat totam repellat quas deserunt
+                            nihil
+                            excepturi vero, saepe eius officia!</p>
+                        <p class="overfl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi cum
+                            commodi
+                            reiciendis
+                            at. Voluptas in explicabo est aliquid sequi. Alias eligendi fugit tempora, delectus quod nam
+                            quisquam nihil facere?
+                            Eos numquam neque sequi natus, aliquid tempore unde nemo porro quas, laudantium soluta
+                            suscipit
+                            labore nam quasi corrupti veritatis nihil vitae obcaecati! Illum vitae maiores, magni
+                            incidunt
+                            nobis ex quo.
+                            Officia aut delectus vel ipsa temporibus laboriosam eum. Ex accusamus ad delectus autem? Sit
+                            doloremque nam consectetur, dolorem dolor est, recusandae dignissimos quia aliquam totam
+                            consequuntur harum id consequatur sapiente.
+                            Omnis, veritatis sequi? Reiciendis odit debitis officiis eligendi, cum eaque eius autem
+                            molestiae dolorum sunt rem saepe. Architecto cumque, fugiat totam repellat quas deserunt
+                            nihil
+                            excepturi vero, saepe eius officia!</p>
+                    </details>
+                </li>
+                <li>visibility: hidden is different from display: none. The former takes up the hidden space while the
+                    latter completely removes the element.</li>
+                <li>Box model. Any element can have a border around it. Border style <b>must</b> be specified. Mostly we
+                    use solid border</li>
+                <li>border-width: 1px 2px 3px 4px; specifies the border width for an element in a clockwise order for
+                    sides. border-width: 1px sets 1px to all sides</li>
+                <li>margin: additional space outside the border</li>
+                <li>padding: empty space between text and element</li>
+                <li>width of a box is width+2*(padding+margin+border)</li>
+                <li>use margin: 0 auto to center element horizontally</li>
+                <li>measures: absolute: px, mm, pt; Fluid: %, em, rem</li>
+                <li>use box model to reduce page complexity</li>
+                <li>example:
+                    <br>
+                    <p class="textbox">text here</p>
+                    <p class="textbox">text 2 here</p>
+                </li>
+                <li>text-decorator. links</li>
+                <li>links have states: a:visited, a:hover,a:focus, a:active</li>
+                <li>precedence: link>hover>visited/active</li>
+                <li>a:focus{property: value}</li>
+                <li>there are tools that help creating css styling easier: <a href="http://css3generator.com/">css
+                        generator</a> or google "developer tools"</li>
+                <br>
+                <li>advanced selectors:
+                    <ol>
+                        <li> descendant selector (nav a) - selects anchors inside nav;</li>
+                        <li> child selector (nav>a) - immediately after nav, style all anchors. If there is a paragraph
+                            inbetween nav and a, no
+                            styling applies</li>
+                        <li>adjacent sibling: nav+a - elementmust be at the same level and follow each other</li>
+                        <li>id selector: use pound. Developers are moving out of id usage.</li>
+                        <li>class selector: .class. you have to specify all your similar tags with your class name</li>
+                        <li>narrowing the scope: p.main - all paragraphs using main class</li>
+                        <li>you can combine scope with different elements using comma: p.main, .classes, #ids</li>
+                        <li>* - selects all elements</li>
+                        <li>attribute selector: a[href='info.html'] this selects all info.html links</li>
+                        <li>pseudo-classes, pseudo-elements</li>
+                    </ol>
+                </li>
+                <li>attribute selectors with matching operators: a[href^='http://umich'] match the beginning</li>
+                <li>match the end: img[src$='.png']</li>
+                <li>* wildcard: a[href*='umich']</li>
+                <li>useful css tricks: <a href="https://css-tricks.com/">link</a></li>
+                <li>some css does not work in all browsers. We can use browser prefixes to support our css styling</li>
+                <li> check https://caniuse.com for supported properties</li>
+                <li>for prefixes, you are just adding prefix and property e.g. -o-column-count for opera column-count;
+                    -webkit-for Android, chrome, IOS,
+                    safari; -o- opera;
+                    -ms-internet explorer;-moz- firefox;
+                    moz.</li>
+                <li>
+                    In your browser, you can inspect and change what looks good, then copy that to your code</li>
+                <li>design for accessibility: follow POUR: Perceivable, Operable, understandable, Robust</li>
+                <li>make the page easy to navigate. do not overcrowd the page.</li>
+                <li>you want a clean web page that conveys your information</li>
+                <br>
+                <h3>Pseudo-classes</h3>
+                <li>pseudo-class: elements populated dynamically. a:hover{}</li>
+                <li>positional pseudo-classes. gets the position and applies style: li:first-child{}, li:nth-child(4)
+                </li>
+                <li>textual :first-letter</li>
+                <br>
+                <h3>Transitions</h3>
+                <li>transitions alter the appearance of the element if you hover over</li>
+                <li><b>transition-property</b>what you want to change?</li>
+                <li><b>transition-duration</b>how long should it take</li>
+                <li><b>transition-timing</b></li>
+                <li><b>transition-delay</b></li>
+                <li>example. for transitions you always need start and end state. end state can be :hover, :click etc.
+                    <div id="transition">hover over or click</div>
+                </li>
+                <li>for accessibility purposes, do not make site functions dependent on transitions</li>
+                <h3>transforms</h3>
+                <li>transform changes the appearance of elements</li>
+                <li>translate moves element in x and y axis</li>
+                <li>rotate - spins element </li>
+                <li>scale - make wider or taller</li>
+                <li>skew - skews the element</li>
+                <li>matrix - combines above 4 properties in one</li>
+                <li>transform used in combination with state changes</li>
+                <h3>TODO</h3>
+                <li>week 2 - homework, week 4 homework</li>
+            </ul>
+        </details>
+        <br>
+        Progress: Javascript course (10%) <meter min=0 max=100 value=40>10%</meter>
+        <br>
+        <details>
+            <summary><b>Javascript notes</b></summary>
+            <ul>
+                <li>similar to C++ in syntax</li>
+            </ul>
+        </details>
+        <br>
+
+        Progress in course specialization (40%) <progress max=100 value=40>20%</progress>
+        <br>
+        <hr>
+        <b>Completed:Aug 29, 2021</b>
+        <br>
+        <br>
+        Progress in life goals (40%) <meter min=0 max=100 value=40>40%</meter>
+
+    </section>
+    <section class="whole">
+        <h2>More About Me</h2>
+        <details>
+            <summary>My Childhood</summary>
+            I grew up in Samarkand region in Uzbekistan. Our family used to visit Dargom river on weekends during
+            summer. <br> Later when I was in 7th grade, we moved to Tashkent, the capital of Uzbekistan, in pursuit of
+            better education and future.
+        </details>
+        <details>
+            <summary>My Career</summary>
+            <figure>
+                <img src="saeed.jpg" alt="I am smiling for the linkedin profile photo" width="400" title="Me in 2019">
+                <figcaption>Me smiling for a LinkedIn porfile photo while I was looking for a job in 2019 right after my
+                    graduation</figcaption>
+            </figure>
+            <p>
+                I am a data analyst - Data Scientist at heart. I am expanding my skills by embracing other relevant
+                skills - e.g. Web Development.
+                Understanding how web applications work is crucial in building interactive dashboards and data
+                visualizations. Furthermore, I will be able
+                to showcase my projects without any restrictions to blogging websites.
+            </p>
+        </details>
+    </section>
+    <footer>
+        <p>
+            This page was created by Saidakbar P and Collen van Lent.To learn more, visit <a
+                href="https://www.coursera.org/specializations/web-design">intro to web design</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

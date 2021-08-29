@@ -1,0 +1,125 @@
+body { 
+    margin: 5%;
+    font-size: larger;
+}
+h1 {
+    background: lightskyblue;
+    font-size: 150%;
+    padding: 20px;
+}
+nav {
+    font-variant: small-caps;
+    font-size: 150%;
+    color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1%;
+}
+header {
+    background: rgb(185, 173, 173);
+    text-align: center;
+}
+h2 {
+    color: rgb(27, 23, 23);
+    background-color: #82d9f1;
+}
+header, footer {
+    color: rgb(19, 18, 18);
+    clear: both;
+    background: linear-gradient(rgb(212, 199, 199), rgb(106, 230, 199));
+}
+span {
+    background: thistle;
+    width: 75px;
+    height: 50px;
+    display: inline-block;
+    float: right;
+}
+/* after-span list element should be below float item */
+#after-span {
+    clear: both;
+}
+.overfl {
+    background: lightgreen;
+    display: inline-block;
+    /* width 30% of display will fit 3 overfl items in the screen when we use inline-block display */
+    width: 30%; 
+    height: 200px; /* limit the height of the overfl elements to fit in 200px*/
+    /* overflow: scroll;  we can use scrolling but it is not always obvious */ 
+    display: table-cell;
+}
+.textbox {
+    background: blue;
+    color: cornsilk;
+    width: 40%;
+    display: inline-block;
+    height: 200px;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 50px;
+    border: 20px solid #00B7ea;
+    margin: 5px;
+    padding: 10px;
+}
+/* nth-child selects first 2 items. Example below */
+section {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+}
+/* image width */
+img {
+    width: 15%;
+}
+/* list styles */
+ul {
+    list-style-type: square;
+}
+.half {
+    display: inline-block;
+    width:49%;
+    float:left;
+    font-size: larger;
+}
+.whole {
+    width: 99%;
+    clear: both;
+    padding-bottom: 3%;
+
+}
+/* we provide starting state for the transition element */
+#transition {
+    color: #000;
+
+    background: #2db34a;
+    line-height: 200px;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    border-radius: 6px;
+    transition-property: color, width, background, border-radius;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    transition-delay: .5s;
+}
+/* we can use shorthands: transition: background .2s linear, border-radius 1s ease-in 1s; */
+/* new state of the transition element when we hover over */
+#transition:hover {
+    color:coral;
+    width: 350px;
+    background: rgb(23, 14, 144);
+    border-radius: 20%;
+}
+/* transition when you click */
+#transition:active {
+    color: wheat;
+    width: 150px;
+    background: rgb(32, 31, 37);
+}
+footer {
+    padding: 5%;
+}
+footer p {
+    text-align: center;
+    font-size: larger;
+}

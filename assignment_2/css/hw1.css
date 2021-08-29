@@ -1,0 +1,59 @@
+body {
+    margin: 1%;
+    padding: 0%;  
+}
+header {
+    background-image: url("../images/flywheel.jpg");
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: cover; /* make background full screen */
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+    padding: 1% 7% 4% 7%;
+}
+header h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav a {
+    display: inline-block;
+    width: 20%;
+    padding: 2% 1%;
+    text-align: center;
+    margin: 15px 20px;
+    border: 2px;
+    background-color: rgb(233, 245, 233, 0.3); /*the last item is background opacity*/
+    border-radius: 5%;
+    text-transform: capitalize;
+    font-size: larger;
+    color: black;
+    /* remove underline in links */
+    text-decoration: none;
+}
+nav a:active {
+    background-color: rgb(255, 248, 220, 0.5);
+}
+/* active class for each html tells which page we are at by highlighting the class */
+.active {
+    background-color: rgb(255, 255, 255);
+}
+.left {
+    width: 15%;
+    float: left;
+    background-color: rgb(95, 129, 95);
+    padding: 2%;
+}
+.left img {
+    width: 100%;
+    border: 3px solid;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    border-color: black;
+}
+.right {
+    background-color: white;
+    display: inline-block;
+    width: 80%;
+}

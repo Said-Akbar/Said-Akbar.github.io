@@ -61,12 +61,12 @@ span {
     padding: 10px;
 }
 /* nth-child selects first 2 items. Example below */
-section {
+/* section {
     width: 30%;
     display: inline-block;
     float: left;
     margin-left: 1%;
-}
+} */
 /* image width */
 img {
     width: 15%;
@@ -80,6 +80,7 @@ ul {
     width:49%;
     float:left;
     font-size: larger;
+    margin-left: 1%;
 }
 .whole {
     width: 99%;
@@ -123,3 +124,54 @@ footer p {
     text-align: center;
     font-size: larger;
 }
+.positioning {
+    border: 1px dotted;
+    position: relative;
+    height: 300px;
+    width: 400px;
+    
+}
+.positioning p {
+    border: 1px solid;
+    width: 50%;
+    margin: 0px;
+    /* relative and top/left tells the element to move relative to its ancestor */
+    position: relative; /*using absolute value will make them be on top of each another*/
+    top: 100px;
+    left: 100px;
+}
+/* general dropdown properties */
+.dropdown ul {
+    list-style: none; /* removes dots for list items */
+    background-color: #444;
+    text-align: center;
+    padding: 0%;
+    margin: 0;
+    color: white;
+    width: 25%;
+  }
+/* style list items */
+.dropdown li {
+    width: inherit;
+    margin: 0;
+    padding: 20px;
+    padding-left: 0;
+  }
+  /* highlight menu items when hovering */
+.dropdown li:hover {
+    background-color: #005f5f;
+}
+
+
+/* hide menu items when not hovering */
+.dropdown li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+    padding-left: 0;
+} 
+/* show menu items */
+.dropdown li:hover ul {
+    display: block;
+ } 
+ 

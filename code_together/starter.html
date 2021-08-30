@@ -252,22 +252,187 @@
                 <li>skew - skews the element</li>
                 <li>matrix - combines above 4 properties in one</li>
                 <li>transform used in combination with state changes</li>
-                <h3>TODO</h3>
-                <li>week 2 - homework, week 4 homework</li>
+                <h3>Positioning</h3>
+                <li>positioning properties: static, relative, absolute, fixed. Static is default value</li>
+                <li>Relative: positioning is "relative to itself". keeps the main location, but moves the element</li>
+                <li>Absolute: element is removed from its location and positioned relative to its nearest ancestor.
+                    Other elements behave as if it does not exist. can end up on top of each another</li>
+                <li>fixed position: the element stays on the browser window. When you scroll, it will not go away.</li>
+                <li>example:
+                    <br>
+                    <section class="positioning">
+                        <p>a</p>
+                        <p>b</p>
+                        <p>c</p>
+                    </section>
+                </li>
+                <li>codepen week 4 source examples: <a href="https://codepen.io/collection/AOLapY/">link</a></li>
+                <li>we can create dropdown menus using css positions</li>
+                <h3>accessibility</h3>
+                <li>for accessibility, make sure navigation is usable with tabs</li>
+                <li>always have title for a page. Heading should always be in ascending order: h1>h2>h3>etc</li>
+                <li>use off page headings to send the accessibility users to main content. make sure links have
+                    meaningful names</li>
+                <h3>dropdown menu</h3>
+                <li class="dropdown">example:
+                    <br>
+                    <p>
+                    <ul>
+                        <li>dropdown
+                            <ul>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </li>
             </ul>
         </details>
         <br>
-        Progress: Javascript course (10%) <meter min=0 max=100 value=40>10%</meter>
+        Progress: Javascript course (100%) <meter min=0 max=100 value=100>100%</meter>
         <br>
         <details>
             <summary><b>Javascript notes</b></summary>
             <ul>
-                <li>similar to C++ in syntax</li>
+                <li>similar to C++ in syntax. Zero indexed</li>
+                <li>in html, body part, use script tag to insert JS. Or best practice, use an external js file</li>
+                <li>external js. in head part:
+                    script src="mycode.js" /script
+                </li>
+                <li>we can add interactivity to our pages with javascript. It allows to store variables, set decision
+                    points, loop, reuse functions; get data from browser</li>
+                <li>we can manipulate DOM using JS. </li>
+                <h3>DOM</h3>
+                <li>Document Object Model - sturctured like a tree. JS can go and change that elements' attribute</li>
+                <li>page content is represented by DOM and JS interacts with the document using DOM</li>
+                <li>API (Application Programming Interface) - a way to interact with another program</li>
+                <li>Document is the root of the page. e.g: document.URI</li>
+                <li>Element is a node in a tree. We can find it using the API</li>
+                <li>NodeList - array of elements. e.g.: document.getElementbyTagName('p')</li>
+                <li>attribute. end node. rarely used alone</li>
+                <li>What can JS do?</li>
+                <ul>
+                    <li>read, write HTML elements</li>
+                    <li>react to events</li>
+                    <li>validate data</li>
+                    <li>detect the visitors browser</li>
+                    <li>create cookies </li>
+                </ul>
+                <li>JS outputs</li>
+                <ul>
+                    <li>alert box: window.alert()</li>
+                    <li>prompt window.prompt()</li>
+                    <li>html output: html.write() writes directly to the page</li>
+                    <li>element.innerHTML = "text" changes content of the element</li>
+                    <li>browser console console.log(). use this to debug your code</li>
+                </ul>
+                <li> console.log("Hello World!") here in HTML!
+                    <script>console.log("Hello World!")</script>
+                </li>
+                <li><b> Store data in JS</b></li>
+
+                <li>we use variables to store data</li>
+                <li>e.g.: var myvar1; this will allocate memory address for myvar1</li>
+                <li>var names are case sensitive. Make your var names meaningful. var myname = "Said"</li>
+                <li>variables are key component of creating interactive programs</li>
+
+                <h3>data types</h3>
+                <li>
+
+                <li>JS vars have data type and each var can be one single data type</li>
+                <li>numbers. var pi = 3.14 </li>
+                <li>strings. var mn = "test" </li>
+                <li>boolean: true, false. windowstatus=window.closed</li>
+                <li>objects. var ts = document.getElementById('myid')</li>
+                <li>arrays. A collection of objects </li>
+
+                </li>
+                <li>statements have expressions.</li>
+                <li>boolean operators: a==b (equal to), a!=b (not equal to), >=, <= </li>
+                <li>equality with type: a===b check even the data type is the same</li>
+                <li>&& - and, || - or, ! - not</li>
+                <h3>functions</h3>
+
+
+                <li>function myfunct(arg1) {do something to arg1; return arg2;}</li>
+                <li>use built in functions whenever possible</li>
+                <li>dont be too specific in your function. You want to make it reusable</li>
+
+                <h3>project folder structure</h3>
+                <li>css folder, js folder, images folder, root folder: has html</li>
+
+                <h3>events</h3>
+                <li>comes from JS API. These are events like mouse over, loading and more</li>
+                <li>types: <b> onclick, onmouseover, onresize, onload</b></li>
+                <li>elements react to events. we need to add event into the tag and action we want to see</li>
+                <li>double and single quotes are interchangeable but use double quotes for strings</li>
+                <li>
+                    &eqslantless; p onclick="message('hello')" &GreaterGreater;. in html-> em tag onclick em tag
+                </li>
+                <li>button example:
+                    <br>
+                    <!-- this function updates demo id paragraph with current system date on button click -->
+                    <script>function displayDate() { document.getElementById("demo").innerHTML = Date() }</script>
+                    <p id="demo">this is a paragraph. Click the button</p>
+                    <!-- button click that triggers date function -->
+                    <button type="button" onclick="displayDate()">Display Date</button>
+                </li>
+                <li>DOM is always listening to events. This can slow down the page if cluttered</li>
+                <li>Events: Mouse events, Keyboard events, Frame Events</li>
+                <li>basically, you can put event type and JS action in an element attributes, and target another
+                    element by id to change that targeted element.
+                    &lt; button type="button" onclick="document.getElementById('demo').innerHTML = Date()" &gt; Display
+                    Date &lt; /button &gt;
+                    <br>
+                    &lt; p id="demo"&gt; this is a paragraph &lt;/p &gt;
+                </li>
+                <h3>This</h3>
+                <li>this keyword will reference the element itself</li>
+                <li>each element in DOM has this keyword</li>
+                <li>this allows to get the element data</li>
+                <li>this is like self in Python. Refers to current object/tag it is being used.</li>
+
+                <h3>Arrays</h3>
+                <li>list of elements/items with zero indexed indices.</li>
+                <li>array types can have different data types</li>
+                <li>arrays are objects and have methods. grade.length, grade.sort(), grade.push()</li>
+                <li> returns array-> getElementsByTagName('h2')</li>
+
+                <h3>loops</h3>
+                <li>for (let i=0,i &lt; array.leength, j++){ do smth;}</li>
+                <h3>conditions</h3>
+                <li>flow of control using 'if'. if (boolean-expression){do smth;} else {do smth else;}. Only one flow is
+                    executed</li>
+                <li>single statement does not need curly brackets. But block of code needs curly brackets</li>
+                <li> array with empty values are undefined values: var arr = [1, ,3, 4, , , ,] </li>
+
+                <h3>Errors</h3>
+                <li>two types: syntactic and logical errors</li>
+                <li>always print your errors by console log</li>
+
+                <h3>Forms</h3>
+                <li>you can pass username and pwd</li>
+                <li>front end is what happens in browser/client side: HTML, CSS, JS</li>
+                <li>backend is what the server handles. tools: python, JAVA, PHP, Node.js</li>
+                <li>form has label, input</li>
+                <li>input types: radio, checkbox, submit, url, etc.</li>
+                <li>value will be passed tp the server</li>
+                <li>validate</li>
+                <li>requires input and correct formatting. Can use required attribute in inputs</li>
+                <li>we can define patterns. this is regular expressions: <a href="https://www.html5pattern.com">html5
+                        patterns</a></li>
+                <li>checkboxes</li>
+                <li>you will loose it if you dont use it</li>
+
             </ul>
+
         </details>
+        <p>TODO tasks: CSS week4, JS: week 2,</p>
         <br>
 
-        Progress in course specialization (40%) <progress max=100 value=40>20%</progress>
+        Progress in course specialization (40%) <progress max=100 value=60>20%</progress>
         <br>
         <hr>
         <b>Completed:Aug 29, 2021</b>
